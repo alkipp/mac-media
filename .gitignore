@@ -1,0 +1,35 @@
+# Rust
+/target/
+**/target/
+*.rs.bk
+
+# Swift
+.build/
+.swiftpm/
+*.xcodeproj/
+DerivedData/
+
+# Betriebsdaten (niemals committen)
+artifacts/
+state/
+*.sqlite
+*.sqlite-journal
+*.log
+token
+
+# Secrets
+.env
+*.pem
+*.key
+
+# macOS
+.DS_Store
+
+# Editoren
+.idea/
+.vscode/
+
+# Python (photo-Backend)
+__pycache__/
+.mypy_cache/
+.ruff_cache/

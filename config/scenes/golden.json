@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "duration": 10.0,
+  "background": "#101218",
+  "layers": [
+    {
+      "type": "rect",
+      "x": 120,
+      "y": 160,
+      "width": 420,
+      "height": 240,
+      "radius": 24,
+      "color": "#5B8DEF",
+      "motion": { "dx": 760, "dy": 0 }
+    },
+    {
+      "type": "circle",
+      "x": 960,
+      "y": 720,
+      "radius": 140,
+      "color": "#4FA37A",
+      "motion": { "dx": 0, "dy": -280, "opacity_from": 0.2, "opacity_to": 1.0 }
+    }
+  ]
+}

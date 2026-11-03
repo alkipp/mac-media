@@ -1,0 +1,77 @@
+{
+  "$defs": {
+    "Transport": {
+      "description": "Transport, über den das Gateway ein Backend erreicht.",
+      "oneOf": [
+        {
+          "const": "stdio",
+          "description": "Lokaler Kindprozess über stdin/stdout.",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Manifest eines Backends, wie es unter `servers.d/*.json` liegt.",
+  "properties": {
+    "capabilities": {
+      "description": "Ressourcen, die das Backend bereitstellt (nicht die Tool-Namen).",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "command": {
+      "description": "Kommando als Array: Programm und Argumente, kein Shell-String.",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "enabled": {
+      "default": true,
+      "description": "`false` hält das Backend konfiguriert, startet es aber nicht.",
+      "type": "boolean"
+    },
+    "maxMemoryMB": {
+      "default": 4096,
+      "description": "Speicherlimit des Backends in MiB.",
+      "format": "uint32",
+      "maximum": 65536,
+      "minimum": 64,
+      "type": "integer"
+    },
+    "name": {
+      "description": "Kurzer, eindeutiger Name. Bestimmt den Tool-Namespace (`<name>_<tool>`).",
+      "type": "string"
+    },
+    "timeout": {
+      "default": 600000,
+      "description": "Zeitlimit pro Aufruf in Millisekunden.",
+      "format": "uint64",
+      "maximum": 86400000,
+      "minimum": 1000,
+      "type": "integer"
+    },
+    "transport": {
+      "$ref": "#/$defs/Transport",
+      "description": "Transport zum Backend."
+    },
+    "version": {
+      "description": "Optionale Version des Backends, wie sie das Binary meldet.",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "transport",
+    "command",
+    "capabilities"
+  ],
+  "title": "Manifest",
+  "type": "object"
+}

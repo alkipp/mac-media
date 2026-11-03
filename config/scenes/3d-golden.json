@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "duration": 3.0,
+  "background": "#101218",
+  "camera": {
+    "position": [0, 1.5, 6],
+    "target": [0, 0, 0],
+    "fov": 50,
+    "orbit": { "degrees": 90, "axis": "y" }
+  },
+  "light": { "position": [4, 6, 4], "intensity": 1000, "color": "#FFFFFF" },
+  "objects": [
+    {
+      "type": "box",
+      "position": [0, 0, 0],
+      "size": [1.4, 1.4, 1.4],
+      "color": "#5B8DEF",
+      "rotation": [0, 0.6, 0]
+    },
+    {
+      "type": "sphere",
+      "position": [2.2, 0, 0],
+      "radius": 0.8,
+      "color": "#4FA37A"
+    },
+    {
+      "type": "plane",
+      "position": [0, -1.2, 0],
+      "size": [12, 12],
+      "color": "#20242C"
+    }
+  ]
+}

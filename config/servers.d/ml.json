@@ -1,0 +1,13 @@
+{
+  "name": "ml",
+  "version": "0.2.0",
+  "transport": "stdio",
+  "command": [
+    "@APP_SUPPORT@/bin/ml-mcp",
+    "--stdio"
+  ],
+  "capabilities": ["ane", "coreml", "vision", "cpu", "ocr"],
+  "timeout": 600000,
+  "maxMemoryMB": 4096,
+  "enabled": true
+}

@@ -1,0 +1,52 @@
+name: ci
+on:
+  push:
+    paths-ignore:
+      - '.gitea/workflows/bench.yml'
+      - '.gitea/workflows/routing.yml'
+  workflow_dispatch:
+
+env:
+  PY: /srv/venvs/py/bin
+
+jobs:
+  shell:
+    runs-on: cpu-fast
+    steps:
+      - uses: actions/checkout@v4
+      - name: Syntaxpruefung der Shell-Skripte
+        run: |
+          set -u
+          mapfile -t files < <(git ls-files '*.sh')
+          if [ "${#files[@]}" -eq 0 ]; then echo "keine Shell-Skripte"; exit 0; fi
+          rc=0
+          for f in "${files[@]}"; do
+            printf '== %s\n' "$f"
+            bash -n "$f" || rc=1
+          done
+          exit $rc
+
+  python:
+    runs-on: cpu-fast
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python-Syntax
+        run: |
+          set -u
+          mapfile -t files < <(git ls-files '*.py')
+          if [ "${#files[@]}" -eq 0 ]; then echo "kein Python"; exit 0; fi
+          $PY/python -m compileall -q "${files[@]}" && echo "Syntax ok (${#files[@]} Dateien)"
+
+  tests:
+    runs-on: cpu-fast
+    # Erst beobachten: die Abhaengigkeiten der Testumgebung sind je Repo
+    # unterschiedlich. Sobald ein Repo gruen laeuft, continue-on-error entfernen.
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tests
+        run: |
+          set -u
+          mapfile -t t < <(git ls-files '*test_*.py' '*_test.py')
+          if [ "${#t[@]}" -eq 0 ]; then echo "keine Tests"; exit 0; fi
+          $PY/pytest -q "${t[@]}"

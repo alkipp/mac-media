@@ -1,0 +1,13 @@
+{
+  "name": "llm",
+  "version": "0.1.0",
+  "transport": "stdio",
+  "command": [
+    "@APP_SUPPORT@/bin/llm-mcp",
+    "--stdio"
+  ],
+  "capabilities": ["metal", "llm", "text"],
+  "timeout": 600000,
+  "maxMemoryMB": 4096,
+  "enabled": false
+}

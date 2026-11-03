@@ -1,0 +1,12 @@
+{
+  "name": "mock",
+  "transport": "stdio",
+  "command": [
+    "@APP_SUPPORT@/bin/mock-mcp",
+    "--stdio"
+  ],
+  "capabilities": ["echo", "sleep", "test"],
+  "timeout": 60000,
+  "maxMemoryMB": 256,
+  "enabled": false
+}

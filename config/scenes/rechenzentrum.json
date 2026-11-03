@@ -1,0 +1,1595 @@
+{
+  "version": 1,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "duration": 24,
+  "background": "#07090D",
+  "camera": {
+    "position": [
+      7.5,
+      3.6,
+      9.5
+    ],
+    "target": [
+      0,
+      1.2,
+      0
+    ],
+    "fov": 45,
+    "orbit": {
+      "degrees": 50,
+      "axis": "y"
+    }
+  },
+  "light": {
+    "position": [
+      7,
+      11,
+      7
+    ],
+    "intensity": 2200,
+    "color": "#FFFFFF"
+  },
+  "ambient": {
+    "intensity": 320,
+    "color": "#8FA6C8"
+  },
+  "objects": [
+    {
+      "type": "plane",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        24,
+        14
+      ],
+      "color": "#141821"
+    },
+    {
+      "type": "plane",
+      "position": [
+        0,
+        3,
+        -7
+      ],
+      "size": [
+        24,
+        6
+      ],
+      "color": "#0E1218",
+      "rotation": [
+        1.5707963267948966,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.004,
+        -5
+      ],
+      "size": [
+        22,
+        0.008,
+        0.012
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.004,
+        -4
+      ],
+      "size": [
+        22,
+        0.008,
+        0.012
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.004,
+        -3
+      ],
+      "size": [
+        22,
+        0.008,
+        0.012
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.004,
+        -2
+      ],
+      "size": [
+        22,
+        0.008,
+        0.012
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.004,
+        -1
+      ],
+      "size": [
+        22,
+        0.008,
+        0.012
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.004,
+        0
+      ],
+      "size": [
+        22,
+        0.008,
+        0.012
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.004,
+        1
+      ],
+      "size": [
+        22,
+        0.008,
+        0.012
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.004,
+        2
+      ],
+      "size": [
+        22,
+        0.008,
+        0.012
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.004,
+        3
+      ],
+      "size": [
+        22,
+        0.008,
+        0.012
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.004,
+        4
+      ],
+      "size": [
+        22,
+        0.008,
+        0.012
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.004,
+        5
+      ],
+      "size": [
+        22,
+        0.008,
+        0.012
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        -10,
+        0.004,
+        0
+      ],
+      "size": [
+        0.012,
+        0.008,
+        12
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        -8,
+        0.004,
+        0
+      ],
+      "size": [
+        0.012,
+        0.008,
+        12
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        0.004,
+        0
+      ],
+      "size": [
+        0.012,
+        0.008,
+        12
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        -4,
+        0.004,
+        0
+      ],
+      "size": [
+        0.012,
+        0.008,
+        12
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        -2,
+        0.004,
+        0
+      ],
+      "size": [
+        0.012,
+        0.008,
+        12
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.004,
+        0
+      ],
+      "size": [
+        0.012,
+        0.008,
+        12
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        2,
+        0.004,
+        0
+      ],
+      "size": [
+        0.012,
+        0.008,
+        12
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        4,
+        0.004,
+        0
+      ],
+      "size": [
+        0.012,
+        0.008,
+        12
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        0.004,
+        0
+      ],
+      "size": [
+        0.012,
+        0.008,
+        12
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        8,
+        0.004,
+        0
+      ],
+      "size": [
+        0.012,
+        0.008,
+        12
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        10,
+        0.004,
+        0
+      ],
+      "size": [
+        0.012,
+        0.008,
+        12
+      ],
+      "color": "#232B38"
+    },
+    {
+      "type": "box",
+      "position": [
+        -4.5,
+        1.1,
+        -2.5
+      ],
+      "size": [
+        1.2,
+        2.2,
+        1
+      ],
+      "color": "#232A36"
+    },
+    {
+      "type": "box",
+      "position": [
+        -4.5,
+        0.42,
+        -1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -4.08,
+        0.42,
+        -1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -4.5,
+        0.6799999999999999,
+        -1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -4.08,
+        0.6799999999999999,
+        -1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -4.5,
+        0.94,
+        -1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -4.08,
+        0.94,
+        -1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -4.5,
+        1.2,
+        -1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -4.08,
+        1.2,
+        -1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -4.5,
+        1.46,
+        -1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -4.08,
+        1.46,
+        -1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -4.5,
+        1.72,
+        -1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -4.08,
+        1.72,
+        -1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -4.5,
+        0.02,
+        -1.25
+      ],
+      "size": [
+        0.05,
+        0.02,
+        2.5
+      ],
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "text",
+      "text": "node-a",
+      "position": [
+        -4.5,
+        2.45,
+        -1.78
+      ],
+      "size": 0.22,
+      "color": "#E6EAF2",
+      "billboard": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -2.5,
+        1.1,
+        -2.5
+      ],
+      "size": [
+        1.2,
+        2.2,
+        1
+      ],
+      "color": "#232A36"
+    },
+    {
+      "type": "box",
+      "position": [
+        -2.5,
+        0.42,
+        -1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.08,
+        0.42,
+        -1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -2.5,
+        0.6799999999999999,
+        -1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.08,
+        0.6799999999999999,
+        -1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -2.5,
+        0.94,
+        -1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.08,
+        0.94,
+        -1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -2.5,
+        1.2,
+        -1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.08,
+        1.2,
+        -1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -2.5,
+        0.02,
+        -1.25
+      ],
+      "size": [
+        0.05,
+        0.02,
+        2.5
+      ],
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "text",
+      "text": "node-b",
+      "position": [
+        -2.5,
+        2.45,
+        -1.78
+      ],
+      "size": 0.22,
+      "color": "#E6EAF2",
+      "billboard": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -0.5,
+        1.1,
+        -2.5
+      ],
+      "size": [
+        1.2,
+        2.2,
+        1
+      ],
+      "color": "#232A36"
+    },
+    {
+      "type": "box",
+      "position": [
+        -0.5,
+        0.42,
+        -1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -0.08000000000000002,
+        0.42,
+        -1.93
+      ],
+      "radius": 0.022,
+      "color": "#5B8DEF",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -0.5,
+        0.6799999999999999,
+        -1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -0.08000000000000002,
+        0.6799999999999999,
+        -1.93
+      ],
+      "radius": 0.022,
+      "color": "#5B8DEF",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -0.5,
+        0.94,
+        -1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -0.08000000000000002,
+        0.94,
+        -1.93
+      ],
+      "radius": 0.022,
+      "color": "#5B8DEF",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -0.5,
+        0.02,
+        -1.25
+      ],
+      "size": [
+        0.05,
+        0.02,
+        2.5
+      ],
+      "color": "#5B8DEF",
+      "emissive": true
+    },
+    {
+      "type": "text",
+      "text": "Netz",
+      "position": [
+        -0.5,
+        2.45,
+        -1.78
+      ],
+      "size": 0.22,
+      "color": "#E6EAF2",
+      "billboard": true
+    },
+    {
+      "type": "box",
+      "position": [
+        1.5,
+        1.1,
+        -2.5
+      ],
+      "size": [
+        1.2,
+        2.2,
+        1
+      ],
+      "color": "#232A36"
+    },
+    {
+      "type": "box",
+      "position": [
+        1.5,
+        0.42,
+        -1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        1.92,
+        0.42,
+        -1.93
+      ],
+      "radius": 0.022,
+      "color": "#D9A441",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        1.5,
+        0.6799999999999999,
+        -1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        1.92,
+        0.6799999999999999,
+        -1.93
+      ],
+      "radius": 0.022,
+      "color": "#D9A441",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        1.5,
+        0.94,
+        -1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        1.92,
+        0.94,
+        -1.93
+      ],
+      "radius": 0.022,
+      "color": "#D9A441",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        1.5,
+        1.2,
+        -1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        1.92,
+        1.2,
+        -1.93
+      ],
+      "radius": 0.022,
+      "color": "#D9A441",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        1.5,
+        0.02,
+        -1.25
+      ],
+      "size": [
+        0.05,
+        0.02,
+        2.5
+      ],
+      "color": "#D9A441",
+      "emissive": true
+    },
+    {
+      "type": "text",
+      "text": "Backup",
+      "position": [
+        1.5,
+        2.45,
+        -1.78
+      ],
+      "size": 0.22,
+      "color": "#E6EAF2",
+      "billboard": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -4.5,
+        1.1,
+        2.5
+      ],
+      "size": [
+        1.2,
+        2.2,
+        1
+      ],
+      "color": "#232A36"
+    },
+    {
+      "type": "box",
+      "position": [
+        -4.5,
+        0.42,
+        1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -4.08,
+        0.42,
+        1.93
+      ],
+      "radius": 0.022,
+      "color": "#5B8DEF",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -4.5,
+        0.6799999999999999,
+        1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -4.08,
+        0.6799999999999999,
+        1.93
+      ],
+      "radius": 0.022,
+      "color": "#5B8DEF",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -4.5,
+        0.94,
+        1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -4.08,
+        0.94,
+        1.93
+      ],
+      "radius": 0.022,
+      "color": "#5B8DEF",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -4.5,
+        0.02,
+        1.25
+      ],
+      "size": [
+        0.05,
+        0.02,
+        2.5
+      ],
+      "color": "#5B8DEF",
+      "emissive": true
+    },
+    {
+      "type": "text",
+      "text": "Internet",
+      "position": [
+        -4.5,
+        2.71,
+        1.78
+      ],
+      "size": 0.22,
+      "color": "#E6EAF2",
+      "billboard": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -2.5,
+        1.1,
+        2.5
+      ],
+      "size": [
+        1.2,
+        2.2,
+        1
+      ],
+      "color": "#232A36"
+    },
+    {
+      "type": "box",
+      "position": [
+        -2.5,
+        0.42,
+        1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.08,
+        0.42,
+        1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -2.5,
+        0.6799999999999999,
+        1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.08,
+        0.6799999999999999,
+        1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -2.5,
+        0.94,
+        1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.08,
+        0.94,
+        1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -2.5,
+        1.2,
+        1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.08,
+        1.2,
+        1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -2.5,
+        1.46,
+        1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.08,
+        1.46,
+        1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -2.5,
+        0.02,
+        1.25
+      ],
+      "size": [
+        0.05,
+        0.02,
+        2.5
+      ],
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "text",
+      "text": "Gitea",
+      "position": [
+        -2.5,
+        2.45,
+        1.78
+      ],
+      "size": 0.22,
+      "color": "#E6EAF2",
+      "billboard": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -0.5,
+        1.1,
+        2.5
+      ],
+      "size": [
+        1.2,
+        2.2,
+        1
+      ],
+      "color": "#232A36"
+    },
+    {
+      "type": "box",
+      "position": [
+        -0.5,
+        0.42,
+        1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -0.08000000000000002,
+        0.42,
+        1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -0.5,
+        0.6799999999999999,
+        1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -0.08000000000000002,
+        0.6799999999999999,
+        1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -0.5,
+        0.94,
+        1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -0.08000000000000002,
+        0.94,
+        1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -0.5,
+        1.2,
+        1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -0.08000000000000002,
+        1.2,
+        1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -0.5,
+        1.46,
+        1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -0.08000000000000002,
+        1.46,
+        1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -0.5,
+        0.02,
+        1.25
+      ],
+      "size": [
+        0.05,
+        0.02,
+        2.5
+      ],
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "text",
+      "text": "Monitoring",
+      "position": [
+        -0.5,
+        2.71,
+        1.78
+      ],
+      "size": 0.22,
+      "color": "#E6EAF2",
+      "billboard": true
+    },
+    {
+      "type": "box",
+      "position": [
+        1.5,
+        1.1,
+        2.5
+      ],
+      "size": [
+        1.2,
+        2.2,
+        1
+      ],
+      "color": "#232A36"
+    },
+    {
+      "type": "box",
+      "position": [
+        1.5,
+        0.42,
+        1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        1.92,
+        0.42,
+        1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        1.5,
+        0.6799999999999999,
+        1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        1.92,
+        0.6799999999999999,
+        1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        1.5,
+        0.94,
+        1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        1.92,
+        0.94,
+        1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        1.5,
+        1.2,
+        1.97
+      ],
+      "size": [
+        1,
+        0.17,
+        0.05
+      ],
+      "color": "#2E3646"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        1.92,
+        1.2,
+        1.93
+      ],
+      "radius": 0.022,
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "box",
+      "position": [
+        1.5,
+        0.02,
+        1.25
+      ],
+      "size": [
+        0.05,
+        0.02,
+        2.5
+      ],
+      "color": "#4FA37A",
+      "emissive": true
+    },
+    {
+      "type": "text",
+      "text": "Mail",
+      "position": [
+        1.5,
+        2.45,
+        1.78
+      ],
+      "size": 0.22,
+      "color": "#E6EAF2",
+      "billboard": true
+    },
+    {
+      "type": "text",
+      "text": "Data Center",
+      "position": [
+        0,
+        3.4,
+        -3.2
+      ],
+      "size": 0.5,
+      "color": "#F5F5F7",
+      "billboard": true
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.35,
+        0
+      ],
+      "size": [
+        2,
+        0.7,
+        1
+      ],
+      "color": "#2B4A6B"
+    },
+    {
+      "type": "text",
+      "text": "Core · WireGuard",
+      "position": [
+        0,
+        1.3,
+        0.2
+      ],
+      "size": 0.2,
+      "color": "#8FB4FF",
+      "billboard": true
+    }
+  ]
+}

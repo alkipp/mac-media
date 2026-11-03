@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "width": 3840,
+  "height": 2160,
+  "fps": 30,
+  "duration": 5.0,
+  "background": "#101218",
+  "layers": [
+    {
+      "type": "rect",
+      "x": 240,
+      "y": 320,
+      "width": 840,
+      "height": 480,
+      "radius": 48,
+      "color": "#5B8DEF",
+      "motion": {
+        "keyframes": [
+          { "t": 0.0, "x": 240 },
+          { "t": 2.5, "x": 2700 },
+          { "t": 5.0, "x": 240 }
+        ],
+        "easing": "ease-in-out"
+      }
+    },
+    {
+      "type": "circle",
+      "x": 1920,
+      "y": 1400,
+      "radius": 280,
+      "color": "#4FA37A",
+      "motion": {
+        "keyframes": [
+          { "t": 0.0, "y": 1400, "opacity": 0.3 },
+          { "t": 2.5, "y": 700, "opacity": 1.0 },
+          { "t": 5.0, "y": 1400, "opacity": 0.3 }
+        ],
+        "easing": "ease-out"
+      }
+    }
+  ]
+}

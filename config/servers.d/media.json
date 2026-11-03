@@ -1,0 +1,13 @@
+{
+  "name": "media",
+  "version": "0.1.0",
+  "transport": "stdio",
+  "command": [
+    "@APP_SUPPORT@/bin/media-mcp",
+    "--stdio"
+  ],
+  "capabilities": ["videotoolbox", "h264", "hevc", "thumbnail", "hardware-encode"],
+  "timeout": 600000,
+  "maxMemoryMB": 4096,
+  "enabled": true
+}

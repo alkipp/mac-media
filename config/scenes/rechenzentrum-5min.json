@@ -1,0 +1,6111 @@
+{
+  "version": 1,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "duration": 306,
+  "background": "#06080C",
+  "camera": {
+    "position": [
+      2.5,
+      2,
+      2.8
+    ],
+    "target": [
+      0,
+      1.4,
+      -4
+    ],
+    "fov": 42,
+    "path": [
+      {
+        "t": 0,
+        "position": [
+          2.5,
+          2,
+          2.8
+        ],
+        "target": [
+          0,
+          1.4,
+          -4
+        ]
+      },
+      {
+        "t": 10,
+        "position": [
+          1.2,
+          2.3,
+          1.8
+        ],
+        "target": [
+          0,
+          1.4,
+          -4
+        ]
+      },
+      {
+        "t": 23,
+        "position": [
+          0,
+          2.8,
+          0
+        ],
+        "target": [
+          0,
+          1.4,
+          0
+        ]
+      },
+      {
+        "t": 30,
+        "position": [
+          7.2,
+          2.6,
+          -2.4
+        ],
+        "target": [
+          6,
+          1.5,
+          4
+        ]
+      },
+      {
+        "t": 45,
+        "position": [
+          4.2,
+          2.5,
+          -2.2
+        ],
+        "target": [
+          3,
+          1.5,
+          4
+        ]
+      },
+      {
+        "t": 60,
+        "position": [
+          0.8,
+          2.6,
+          2.6
+        ],
+        "target": [
+          0,
+          1.5,
+          -4
+        ]
+      },
+      {
+        "t": 76,
+        "position": [
+          -4.8,
+          2.5,
+          2.2
+        ],
+        "target": [
+          -6,
+          1.5,
+          -4
+        ]
+      },
+      {
+        "t": 90,
+        "position": [
+          -7.6,
+          2.2,
+          2.4
+        ],
+        "target": [
+          -6,
+          1.5,
+          -4
+        ]
+      },
+      {
+        "t": 105,
+        "position": [
+          -4.2,
+          2,
+          2.6
+        ],
+        "target": [
+          -6,
+          1.5,
+          -4
+        ]
+      },
+      {
+        "t": 125,
+        "position": [
+          -6,
+          2.5,
+          -2.4
+        ],
+        "target": [
+          -6,
+          1.5,
+          4
+        ]
+      },
+      {
+        "t": 140,
+        "position": [
+          -7.4,
+          2.2,
+          -2.2
+        ],
+        "target": [
+          -6,
+          1.5,
+          4
+        ]
+      },
+      {
+        "t": 155,
+        "position": [
+          -4.6,
+          2,
+          -2.4
+        ],
+        "target": [
+          -6,
+          1.5,
+          4
+        ]
+      },
+      {
+        "t": 169,
+        "position": [
+          -4,
+          2.4,
+          -2.4
+        ],
+        "target": [
+          -3,
+          1.5,
+          4
+        ]
+      },
+      {
+        "t": 185,
+        "position": [
+          -1.6,
+          2.1,
+          -2.6
+        ],
+        "target": [
+          -3,
+          1.5,
+          4
+        ]
+      },
+      {
+        "t": 200,
+        "position": [
+          -2,
+          1.9,
+          -2.2
+        ],
+        "target": [
+          -3,
+          1.5,
+          4
+        ]
+      },
+      {
+        "t": 210,
+        "position": [
+          0.6,
+          2.5,
+          2.6
+        ],
+        "target": [
+          3,
+          1.5,
+          -4
+        ]
+      },
+      {
+        "t": 225,
+        "position": [
+          4.6,
+          2.2,
+          2.4
+        ],
+        "target": [
+          3,
+          1.5,
+          -4
+        ]
+      },
+      {
+        "t": 240,
+        "position": [
+          6.6,
+          2.1,
+          2.6
+        ],
+        "target": [
+          6,
+          1.5,
+          -4
+        ]
+      },
+      {
+        "t": 252,
+        "position": [
+          3,
+          3,
+          2
+        ],
+        "target": [
+          0,
+          1.6,
+          0
+        ]
+      },
+      {
+        "t": 270,
+        "position": [
+          0,
+          2.8,
+          2.8
+        ],
+        "target": [
+          0,
+          1.5,
+          0
+        ]
+      },
+      {
+        "t": 289,
+        "position": [
+          0,
+          3,
+          2.6
+        ],
+        "target": [
+          0,
+          1.5,
+          -4
+        ]
+      },
+      {
+        "t": 300,
+        "position": [
+          0,
+          3.2,
+          1.8
+        ],
+        "target": [
+          0,
+          1.4,
+          -4
+        ]
+      },
+      {
+        "t": 306,
+        "position": [
+          0,
+          3.4,
+          1.2
+        ],
+        "target": [
+          0,
+          1.35,
+          -4
+        ]
+      }
+    ]
+  },
+  "light": {
+    "position": [
+      0,
+      10,
+      0
+    ],
+    "intensity": 0,
+    "color": "#FFFFFF"
+  },
+  "lights": [
+    {
+      "type": "ambient",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 600,
+      "color": "#C8D6E8"
+    },
+    {
+      "type": "directional",
+      "position": [
+        6,
+        14,
+        6
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 1000,
+      "color": "#FFFFFF"
+    },
+    {
+      "type": "omni",
+      "position": [
+        0,
+        2.7,
+        0
+      ],
+      "intensity": 900,
+      "color": "#B9CCE8"
+    },
+    {
+      "type": "omni",
+      "position": [
+        -6,
+        3.2,
+        -4
+      ],
+      "intensity": 520,
+      "color": "#6E8FC0"
+    },
+    {
+      "type": "omni",
+      "position": [
+        3,
+        3.2,
+        -4
+      ],
+      "intensity": 420,
+      "color": "#6FA98C"
+    },
+    {
+      "type": "omni",
+      "position": [
+        0,
+        3.4,
+        4
+      ],
+      "intensity": 360,
+      "color": "#C9A46A"
+    }
+  ],
+  "objects": [
+    {
+      "type": "plane",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        30,
+        24
+      ],
+      "color": "#151A22"
+    },
+    {
+      "type": "plane",
+      "position": [
+        0,
+        3,
+        -9
+      ],
+      "size": [
+        30,
+        6
+      ],
+      "color": "#0B0E13",
+      "rotation": [
+        1.5707963267948966,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.006,
+        -8
+      ],
+      "size": [
+        26,
+        0.01,
+        0.02
+      ],
+      "color": "#253143"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.006,
+        -4
+      ],
+      "size": [
+        26,
+        0.01,
+        0.02
+      ],
+      "color": "#253143"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.006,
+        0
+      ],
+      "size": [
+        26,
+        0.01,
+        0.02
+      ],
+      "color": "#253143"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.006,
+        4
+      ],
+      "size": [
+        26,
+        0.01,
+        0.02
+      ],
+      "color": "#253143"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.006,
+        8
+      ],
+      "size": [
+        26,
+        0.01,
+        0.02
+      ],
+      "color": "#253143"
+    },
+    {
+      "type": "box",
+      "position": [
+        -12,
+        0.006,
+        0
+      ],
+      "size": [
+        0.02,
+        0.01,
+        16
+      ],
+      "color": "#253143"
+    },
+    {
+      "type": "box",
+      "position": [
+        -8,
+        0.006,
+        0
+      ],
+      "size": [
+        0.02,
+        0.01,
+        16
+      ],
+      "color": "#253143"
+    },
+    {
+      "type": "box",
+      "position": [
+        -4,
+        0.006,
+        0
+      ],
+      "size": [
+        0.02,
+        0.01,
+        16
+      ],
+      "color": "#253143"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.006,
+        0
+      ],
+      "size": [
+        0.02,
+        0.01,
+        16
+      ],
+      "color": "#253143"
+    },
+    {
+      "type": "box",
+      "position": [
+        4,
+        0.006,
+        0
+      ],
+      "size": [
+        0.02,
+        0.01,
+        16
+      ],
+      "color": "#253143"
+    },
+    {
+      "type": "box",
+      "position": [
+        8,
+        0.006,
+        0
+      ],
+      "size": [
+        0.02,
+        0.01,
+        16
+      ],
+      "color": "#253143"
+    },
+    {
+      "type": "box",
+      "position": [
+        12,
+        0.006,
+        0
+      ],
+      "size": [
+        0.02,
+        0.01,
+        16
+      ],
+      "color": "#253143"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        4.3,
+        -2.5
+      ],
+      "size": [
+        18,
+        0.05,
+        0.22
+      ],
+      "color": "#DCE6FF",
+      "emissive": true,
+      "emissiveIntensity": 2.2
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        4.3,
+        2.5
+      ],
+      "size": [
+        18,
+        0.05,
+        0.22
+      ],
+      "color": "#DCE6FF",
+      "emissive": true,
+      "emissiveIntensity": 2.2
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        1.3,
+        -4
+      ],
+      "size": [
+        1.7,
+        2.6,
+        1.2
+      ],
+      "color": "#252E3C"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6.78,
+        1.3,
+        -3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        -5.22,
+        1.3,
+        -3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        0.38,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        0.38,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.42,
+        0.38,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.5,
+        0.38,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        0.65,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        0.65,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.42,
+        0.65,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.5,
+        0.65,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        0.92,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        0.92,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.42,
+        0.92,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.5,
+        0.92,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        1.19,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        1.19,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.42,
+        1.19,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.5,
+        1.19,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        1.46,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        1.46,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.42,
+        1.46,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.5,
+        1.46,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        1.73,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        1.73,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.42,
+        1.73,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.5,
+        1.73,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        2,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        2,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.42,
+        2,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.5,
+        2,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        2.27,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        2.27,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.42,
+        2.27,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.5,
+        2.27,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        2.42,
+        -3.38
+      ],
+      "size": [
+        1.44,
+        0.1,
+        0.1
+      ],
+      "color": "#1E2735"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -6.45,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -6.15,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.8500000000000005,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.550000000000001,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "text",
+      "text": "node-a",
+      "position": [
+        -6,
+        2.8,
+        -3.05
+      ],
+      "size": 0.24,
+      "color": "#E6F0FF",
+      "billboard": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        0.03,
+        -2
+      ],
+      "size": [
+        0.06,
+        0.02,
+        4
+      ],
+      "color": "#5B8DEF",
+      "emissive": true,
+      "emissiveIntensity": 0.6
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        1.3,
+        -4
+      ],
+      "size": [
+        1.7,
+        2.6,
+        1.2
+      ],
+      "color": "#252E3C"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3.7800000000000002,
+        1.3,
+        -3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        -2.2199999999999998,
+        1.3,
+        -3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        0.38,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        0.38,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.42,
+        0.38,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.5,
+        0.38,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        0.65,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        0.65,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.42,
+        0.65,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.5,
+        0.65,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        0.92,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        0.92,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.42,
+        0.92,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.5,
+        0.92,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        1.19,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        1.19,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.42,
+        1.19,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.5,
+        1.19,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        1.46,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        1.46,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.42,
+        1.46,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.5,
+        1.46,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        1.73,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        1.73,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.42,
+        1.73,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.5,
+        1.73,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        2,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        2,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.42,
+        2,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.5,
+        2,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        2.27,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        2.27,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.42,
+        2.27,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.5,
+        2.27,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        2.42,
+        -3.38
+      ],
+      "size": [
+        1.44,
+        0.1,
+        0.1
+      ],
+      "color": "#1E2735"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -3.45,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -3.1500000000000004,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.85,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.5500000000000003,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "text",
+      "text": "Gitea",
+      "position": [
+        -3,
+        2.8,
+        -3.05
+      ],
+      "size": 0.24,
+      "color": "#E6F0FF",
+      "billboard": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        0.03,
+        -2
+      ],
+      "size": [
+        0.06,
+        0.02,
+        4
+      ],
+      "color": "#5B8DEF",
+      "emissive": true,
+      "emissiveIntensity": 0.6
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        1.3,
+        -4
+      ],
+      "size": [
+        1.7,
+        2.6,
+        1.2
+      ],
+      "color": "#252E3C"
+    },
+    {
+      "type": "box",
+      "position": [
+        -0.78,
+        1.3,
+        -3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        0.78,
+        1.3,
+        -3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.38,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.38,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.58,
+        0.38,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.5,
+        0.38,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.65,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.65,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.58,
+        0.65,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.5,
+        0.65,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.92,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.92,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.58,
+        0.92,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.5,
+        0.92,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        1.19,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        1.19,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.58,
+        1.19,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.5,
+        1.19,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        1.46,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        1.46,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.58,
+        1.46,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.5,
+        1.46,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        1.73,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        1.73,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.58,
+        1.73,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.5,
+        1.73,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        2,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        2,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.58,
+        2,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.5,
+        2,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        2.27,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        2.27,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.58,
+        2.27,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.5,
+        2.27,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        2.42,
+        -3.38
+      ],
+      "size": [
+        1.44,
+        0.1,
+        0.1
+      ],
+      "color": "#1E2735"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -0.45,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -0.15000000000000002,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.14999999999999997,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.4499999999999999,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "text",
+      "text": "Mail",
+      "position": [
+        0,
+        2.8,
+        -3.05
+      ],
+      "size": 0.24,
+      "color": "#E6F0FF",
+      "billboard": true
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.03,
+        -2
+      ],
+      "size": [
+        0.06,
+        0.02,
+        4
+      ],
+      "color": "#5B8DEF",
+      "emissive": true,
+      "emissiveIntensity": 0.6
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        1.3,
+        -4
+      ],
+      "size": [
+        1.7,
+        2.6,
+        1.2
+      ],
+      "color": "#252E3C"
+    },
+    {
+      "type": "box",
+      "position": [
+        2.2199999999999998,
+        1.3,
+        -3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        3.7800000000000002,
+        1.3,
+        -3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        0.38,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        0.38,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.58,
+        0.38,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.5,
+        0.38,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        0.65,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        0.65,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.58,
+        0.65,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.5,
+        0.65,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        0.92,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        0.92,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.58,
+        0.92,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.5,
+        0.92,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        1.19,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        1.19,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.58,
+        1.19,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.5,
+        1.19,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        1.46,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        1.46,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.58,
+        1.46,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.5,
+        1.46,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        1.73,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        1.73,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.58,
+        1.73,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.5,
+        1.73,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        2,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        2,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.58,
+        2,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.5,
+        2,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        2.27,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        2.27,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.58,
+        2.27,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.5,
+        2.27,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        2.42,
+        -3.38
+      ],
+      "size": [
+        1.44,
+        0.1,
+        0.1
+      ],
+      "color": "#1E2735"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        2.55,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        2.8499999999999996,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.15,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.4499999999999997,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "text",
+      "text": "Prometheus",
+      "position": [
+        3,
+        2.8,
+        -3.05
+      ],
+      "size": 0.24,
+      "color": "#E6F0FF",
+      "billboard": true
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        0.03,
+        -2
+      ],
+      "size": [
+        0.06,
+        0.02,
+        4
+      ],
+      "color": "#5B8DEF",
+      "emissive": true,
+      "emissiveIntensity": 0.6
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        1.3,
+        -4
+      ],
+      "size": [
+        1.7,
+        2.6,
+        1.2
+      ],
+      "color": "#252E3C"
+    },
+    {
+      "type": "box",
+      "position": [
+        5.22,
+        1.3,
+        -3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        6.78,
+        1.3,
+        -3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        0.38,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        0.38,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.58,
+        0.38,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.5,
+        0.38,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        0.65,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        0.65,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.58,
+        0.65,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.5,
+        0.65,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        0.92,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        0.92,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.58,
+        0.92,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.5,
+        0.92,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        1.19,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        1.19,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.58,
+        1.19,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.5,
+        1.19,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        1.46,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        1.46,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.58,
+        1.46,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.5,
+        1.46,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        1.73,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        1.73,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.58,
+        1.73,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.5,
+        1.73,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        2,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        2,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.58,
+        2,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.5,
+        2,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        2.27,
+        -3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        2.27,
+        -3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.58,
+        2.27,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.5,
+        2.27,
+        -3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        2.42,
+        -3.38
+      ],
+      "size": [
+        1.44,
+        0.1,
+        0.1
+      ],
+      "color": "#1E2735"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        5.55,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        5.85,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.1499999999999995,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.449999999999999,
+        2.42,
+        -3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "text",
+      "text": "Karma",
+      "position": [
+        6,
+        2.8,
+        -3.05
+      ],
+      "size": 0.24,
+      "color": "#E6F0FF",
+      "billboard": true
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        0.03,
+        -2
+      ],
+      "size": [
+        0.06,
+        0.02,
+        4
+      ],
+      "color": "#5B8DEF",
+      "emissive": true,
+      "emissiveIntensity": 0.6
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        1.3,
+        4
+      ],
+      "size": [
+        1.7,
+        2.6,
+        1.2
+      ],
+      "color": "#252E3C"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6.78,
+        1.3,
+        3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        -5.22,
+        1.3,
+        3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        0.38,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        0.38,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.42,
+        0.38,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.5,
+        0.38,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        0.65,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        0.65,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.42,
+        0.65,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.5,
+        0.65,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        0.92,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        0.92,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.42,
+        0.92,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.5,
+        0.92,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        1.19,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        1.19,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.42,
+        1.19,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.5,
+        1.19,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        1.46,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        1.46,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.42,
+        1.46,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.5,
+        1.46,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        1.73,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        1.73,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.42,
+        1.73,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.5,
+        1.73,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        2,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        2,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.42,
+        2,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.5,
+        2,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        2.27,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        2.27,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.42,
+        2.27,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.5,
+        2.27,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        2.42,
+        3.38
+      ],
+      "size": [
+        1.44,
+        0.1,
+        0.1
+      ],
+      "color": "#1E2735"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -6.45,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -6.15,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.8500000000000005,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -5.550000000000001,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "text",
+      "text": "node-b",
+      "position": [
+        -6,
+        2.8,
+        3.05
+      ],
+      "size": 0.24,
+      "color": "#E6F0FF",
+      "billboard": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -6,
+        0.03,
+        2
+      ],
+      "size": [
+        0.06,
+        0.02,
+        4
+      ],
+      "color": "#4FA37A",
+      "emissive": true,
+      "emissiveIntensity": 0.6
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        1.3,
+        4
+      ],
+      "size": [
+        1.7,
+        2.6,
+        1.2
+      ],
+      "color": "#252E3C"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3.7800000000000002,
+        1.3,
+        3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        -2.2199999999999998,
+        1.3,
+        3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        0.38,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        0.38,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.42,
+        0.38,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.5,
+        0.38,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        0.65,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        0.65,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.42,
+        0.65,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.5,
+        0.65,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        0.92,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        0.92,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.42,
+        0.92,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.5,
+        0.92,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        1.19,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        1.19,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.42,
+        1.19,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.5,
+        1.19,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        1.46,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        1.46,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.42,
+        1.46,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.5,
+        1.46,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        1.73,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        1.73,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.42,
+        1.73,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.5,
+        1.73,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        2,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        2,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.42,
+        2,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.5,
+        2,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        2.27,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        2.27,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.42,
+        2.27,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.5,
+        2.27,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        2.42,
+        3.38
+      ],
+      "size": [
+        1.44,
+        0.1,
+        0.1
+      ],
+      "color": "#1E2735"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -3.45,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -3.1500000000000004,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.85,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -2.5500000000000003,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "text",
+      "text": "node-c",
+      "position": [
+        -3,
+        2.8,
+        3.05
+      ],
+      "size": 0.24,
+      "color": "#E6F0FF",
+      "billboard": true
+    },
+    {
+      "type": "box",
+      "position": [
+        -3,
+        0.03,
+        2
+      ],
+      "size": [
+        0.06,
+        0.02,
+        4
+      ],
+      "color": "#4FA37A",
+      "emissive": true,
+      "emissiveIntensity": 0.6
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        1.3,
+        4
+      ],
+      "size": [
+        1.7,
+        2.6,
+        1.2
+      ],
+      "color": "#252E3C"
+    },
+    {
+      "type": "box",
+      "position": [
+        -0.78,
+        1.3,
+        3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        0.78,
+        1.3,
+        3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.38,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.38,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.58,
+        0.38,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.5,
+        0.38,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.65,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.65,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.58,
+        0.65,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.5,
+        0.65,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.92,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.92,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.58,
+        0.92,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.5,
+        0.92,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        1.19,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        1.19,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.58,
+        1.19,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.5,
+        1.19,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        1.46,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        1.46,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.58,
+        1.46,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.5,
+        1.46,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        1.73,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        1.73,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.58,
+        1.73,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.5,
+        1.73,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        2,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        2,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.58,
+        2,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.5,
+        2,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        2.27,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        2.27,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.58,
+        2.27,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.5,
+        2.27,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        2.42,
+        3.38
+      ],
+      "size": [
+        1.44,
+        0.1,
+        0.1
+      ],
+      "color": "#1E2735"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -0.45,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        -0.15000000000000002,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.14999999999999997,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        0.4499999999999999,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "text",
+      "text": "Backup",
+      "position": [
+        0,
+        2.8,
+        3.05
+      ],
+      "size": 0.24,
+      "color": "#E6F0FF",
+      "billboard": true
+    },
+    {
+      "type": "box",
+      "position": [
+        0,
+        0.03,
+        2
+      ],
+      "size": [
+        0.06,
+        0.02,
+        4
+      ],
+      "color": "#4FA37A",
+      "emissive": true,
+      "emissiveIntensity": 0.6
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        1.3,
+        4
+      ],
+      "size": [
+        1.7,
+        2.6,
+        1.2
+      ],
+      "color": "#252E3C"
+    },
+    {
+      "type": "box",
+      "position": [
+        2.2199999999999998,
+        1.3,
+        3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        3.7800000000000002,
+        1.3,
+        3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        0.38,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        0.38,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.58,
+        0.38,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.5,
+        0.38,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        0.65,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        0.65,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.58,
+        0.65,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.5,
+        0.65,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        0.92,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        0.92,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.58,
+        0.92,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.5,
+        0.92,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        1.19,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        1.19,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.58,
+        1.19,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.5,
+        1.19,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        1.46,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        1.46,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.58,
+        1.46,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.5,
+        1.46,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        1.73,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        1.73,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.58,
+        1.73,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.5,
+        1.73,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        2,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        2,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.58,
+        2,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.5,
+        2,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        2.27,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        2.27,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.58,
+        2.27,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.5,
+        2.27,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        2.42,
+        3.38
+      ],
+      "size": [
+        1.44,
+        0.1,
+        0.1
+      ],
+      "color": "#1E2735"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        2.55,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        2.8499999999999996,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.15,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        3.4499999999999997,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "text",
+      "text": "Netz",
+      "position": [
+        3,
+        2.8,
+        3.05
+      ],
+      "size": 0.24,
+      "color": "#E6F0FF",
+      "billboard": true
+    },
+    {
+      "type": "box",
+      "position": [
+        3,
+        0.03,
+        2
+      ],
+      "size": [
+        0.06,
+        0.02,
+        4
+      ],
+      "color": "#4FA37A",
+      "emissive": true,
+      "emissiveIntensity": 0.6
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        1.3,
+        4
+      ],
+      "size": [
+        1.7,
+        2.6,
+        1.2
+      ],
+      "color": "#252E3C"
+    },
+    {
+      "type": "box",
+      "position": [
+        5.22,
+        1.3,
+        3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        6.78,
+        1.3,
+        3.38
+      ],
+      "size": [
+        0.1,
+        2.3,
+        0.08
+      ],
+      "color": "#161D28"
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        0.38,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        0.38,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.58,
+        0.38,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.5,
+        0.38,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        0.65,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        0.65,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.58,
+        0.65,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.5,
+        0.65,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        0.92,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        0.92,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.58,
+        0.92,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.5,
+        0.92,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        1.19,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        1.19,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.58,
+        1.19,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.5,
+        1.19,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        1.46,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        1.46,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.58,
+        1.46,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.5,
+        1.46,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        1.73,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        1.73,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.58,
+        1.73,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.5,
+        1.73,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        2,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#333E50"
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        2,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.58,
+        2,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.5,
+        2,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        2.27,
+        3.38
+      ],
+      "size": [
+        1.42,
+        0.2,
+        0.06
+      ],
+      "color": "#2B3546"
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        2.27,
+        3.3449999999999998
+      ],
+      "size": [
+        1,
+        0.09,
+        0.02
+      ],
+      "color": "#1A2230"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.58,
+        2.27,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.5,
+        2.27,
+        3.33
+      ],
+      "radius": 0.022,
+      "color": "#4E8FE8",
+      "emissive": true,
+      "emissiveIntensity": 3
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        2.42,
+        3.38
+      ],
+      "size": [
+        1.44,
+        0.1,
+        0.1
+      ],
+      "color": "#1E2735"
+    },
+    {
+      "type": "sphere",
+      "position": [
+        5.55,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        5.85,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.1499999999999995,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#62E39B",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "sphere",
+      "position": [
+        6.449999999999999,
+        2.42,
+        3.31
+      ],
+      "radius": 0.018,
+      "color": "#E8C46A",
+      "emissive": true,
+      "emissiveIntensity": 4
+    },
+    {
+      "type": "text",
+      "text": "Gateway",
+      "position": [
+        6,
+        2.8,
+        3.05
+      ],
+      "size": 0.24,
+      "color": "#E6F0FF",
+      "billboard": true
+    },
+    {
+      "type": "box",
+      "position": [
+        6,
+        0.03,
+        2
+      ],
+      "size": [
+        0.06,
+        0.02,
+        4
+      ],
+      "color": "#4FA37A",
+      "emissive": true,
+      "emissiveIntensity": 0.6
+    }
+  ]
+}

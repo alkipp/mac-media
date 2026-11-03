@@ -1,0 +1,13 @@
+{
+  "name": "render",
+  "version": "0.1.0",
+  "transport": "stdio",
+  "command": [
+    "@APP_SUPPORT@/bin/render-mcp",
+    "--stdio"
+  ],
+  "capabilities": ["gpu", "2d", "svg", "png"],
+  "timeout": 600000,
+  "maxMemoryMB": 4096,
+  "enabled": true
+}

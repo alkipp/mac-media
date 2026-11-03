@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "duration": 2.0,
+  "background": "#101218",
+  "layers": [
+    {
+      "type": "text",
+      "x": 120,
+      "y": 380,
+      "text": "mac-media",
+      "size": 96,
+      "color": "#F5F5F7",
+      "motion": { "dx": 200, "opacity_from": 0.2, "opacity_to": 1.0, "easing": "ease-in-out" }
+    },
+    {
+      "type": "rect",
+      "x": 120,
+      "y": 430,
+      "width": 420,
+      "height": 8,
+      "radius": 4,
+      "color": "#5B8DEF"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "video",
+  "version": "0.1.0",
+  "transport": "stdio",
+  "command": [
+    "@APP_SUPPORT@/bin/video-mcp",
+    "--stdio"
+  ],
+  "capabilities": ["videotoolbox", "avfoundation", "h264", "hevc", "prores"],
+  "timeout": 600000,
+  "maxMemoryMB": 4096,
+  "enabled": true
+}

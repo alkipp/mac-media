@@ -1,0 +1,8 @@
+# photo-Modelle — repo|datei|unterordner|bytes|sha256|lizenz
+# Stand 2026-10-23, Größen und Hashes aus der Hugging-Face-API.
+depth-anything/Depth-Anything-V2-Large-hf|model.safetensors|depth-anything-v2-large|1341322868|4e01e34ed5549b529b70b92d53226bc370f03041977b390d3dde45d47f516cf9|CC-BY-NC-4.0
+facebook/sam2.1-hiera-large|model.safetensors|sam2.1-hiera-large|897897416|dc407dce21301fd94abb395c5099b4f2c455fdc8a8f261ac3d0ea6d4cd197230|Apache-2.0
+ZhengPeng7/BiRefNet|model.safetensors|birefnet|444473596|9ab37426bf4de0567af6b5d21b16151357149139362e6e8992021b8ce356a154|MIT
+ai-forever/Real-ESRGAN|RealESRGAN_x4.pth|real-esrgan|67040989|aa00f09ad753d88576b21ed977e97d634976377031b178acc3b5b238df463400|BSD-3-Clause
+ggerganov/whisper.cpp|ggml-large-v3-turbo.bin|whisper|1624555275|1fc70f774d38eb169993ac391eea357ef47c88757ef72ee5943879b7e8e2bc69|MIT
+ai-forever/Real-ESRGAN|RealESRGAN_x2.pth|real-esrgan|67061725|c830d067d54fc767b9543a8432f36d91bc2de313584e8bbfe4ac26a47339e899|BSD-3-Clause

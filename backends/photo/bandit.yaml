@@ -1,0 +1,15 @@
+# Bandit-Ausnahmen für das photo-Backend, jeweils mit Begründung:
+#
+# B404/B603/B607 — subprocess ruft ausschließlich ffmpeg und whisper-cli mit
+#   festen Argumentlisten auf; Pfade werden über shutil.which aufgelöst und
+#   Eingaben über resolve_input auf den inbox beschränkt.
+# B310 — urlopen geht ausschließlich an die feste Loopback-Adresse von
+#   llama-swap (127.0.0.1:8080), nie an eine Nutzereingabe.
+# B615 — from_pretrained lädt ausschließlich lokale Verzeichnisse
+#   (local_files_only=True); es gibt keinen Hub-Download zur Laufzeit.
+skips:
+  - B404
+  - B310
+  - B603
+  - B607
+  - B615

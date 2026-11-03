@@ -1,0 +1,382 @@
+{
+  "$defs": {
+    "CircleLayer": {
+      "additionalProperties": false,
+      "description": "Kreis-Ebene.",
+      "properties": {
+        "color": {
+          "$ref": "#/$defs/Color",
+          "description": "Füllfarbe."
+        },
+        "motion": {
+          "$ref": "#/$defs/Motion",
+          "description": "Optionale Bewegung."
+        },
+        "radius": {
+          "description": "Radius in Pixeln.",
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        "type": {
+          "const": "circle",
+          "type": "string"
+        },
+        "x": {
+          "description": "Mittelpunkt in x-Richtung in Pixeln.",
+          "type": "number"
+        },
+        "y": {
+          "description": "Mittelpunkt in y-Richtung in Pixeln.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "type",
+        "x",
+        "y",
+        "radius",
+        "color"
+      ],
+      "type": "object"
+    },
+    "Color": {
+      "description": "Farbe als #RRGGBB oder #RRGGBBAA.",
+      "pattern": "^#([0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})$",
+      "type": "string"
+    },
+    "Easing": {
+      "default": "linear",
+      "description": "Verlauf zwischen zwei Werten: linear (t), ease-in (t²), ease-out (1-(1-t)²), ease-in-out (3t²-2t³). Gilt für dx/dy, Deckkraft und Keyframe-Strecken.",
+      "enum": [
+        "linear",
+        "ease-in",
+        "ease-out",
+        "ease-in-out"
+      ],
+      "type": "string"
+    },
+    "ImageLayer": {
+      "additionalProperties": false,
+      "description": "Bild-Ebene; der Pfad ist relativ zur Szenen-Datei.",
+      "properties": {
+        "height": {
+          "description": "Zielhöhe in Pixeln.",
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        "motion": {
+          "$ref": "#/$defs/Motion",
+          "description": "Optionale Bewegung."
+        },
+        "path": {
+          "description": "Relativer Pfad, ohne '..' und ohne Wurzelpfad.",
+          "minLength": 1,
+          "pattern": "^(?!/)(?![A-Za-z]:)(?!(?:.*/)?\\.\\.(?:/|$)).+\\.(?:[Pp][Nn][Gg]|[Jj][Pp][Gg]|[Jj][Pp][Ee][Gg]|[Ww][Ee][Bb][Pp])$",
+          "type": "string"
+        },
+        "type": {
+          "const": "image",
+          "type": "string"
+        },
+        "width": {
+          "description": "Zielbreite in Pixeln.",
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        "x": {
+          "description": "Linke Kante in Pixeln.",
+          "type": "number"
+        },
+        "y": {
+          "description": "Obere Kante in Pixeln.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "type",
+        "x",
+        "y",
+        "width",
+        "height",
+        "path"
+      ],
+      "type": "object"
+    },
+    "Keyframe": {
+      "additionalProperties": false,
+      "description": "Stützpunkt einer Bewegung. x und y sind absolute Positionen in Pixeln. Fehlende Felder erben den Standort der Ebene (x, y) bzw. Deckkraft 1.0; vor dem ersten und nach dem letzten Punkt gilt der jeweilige Wert.",
+      "properties": {
+        "opacity": {
+          "description": "Deckkraft 0.0–1.0; fehlt sie, gilt 1.0.",
+          "type": "number"
+        },
+        "t": {
+          "description": "Zeitpunkt in Sekunden seit Szenenbeginn (0 bis Dauer).",
+          "maximum": 600,
+          "minimum": 0,
+          "type": "number"
+        },
+        "x": {
+          "description": "Absolute Position in x-Richtung in Pixeln; fehlt sie, gilt x der Ebene.",
+          "type": "number"
+        },
+        "y": {
+          "description": "Absolute Position in y-Richtung in Pixeln; fehlt sie, gilt y der Ebene.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "t"
+      ],
+      "type": "object"
+    },
+    "Layer": {
+      "description": "Eine Ebene; 'type' wählt die Art.",
+      "oneOf": [
+        {
+          "$ref": "#/$defs/RectLayer"
+        },
+        {
+          "$ref": "#/$defs/CircleLayer"
+        },
+        {
+          "$ref": "#/$defs/TextLayer"
+        },
+        {
+          "$ref": "#/$defs/ImageLayer"
+        }
+      ]
+    },
+    "Motion": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "keyframes"
+            ]
+          },
+          "then": {
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "dx"
+                  ]
+                },
+                {
+                  "required": [
+                    "dy"
+                  ]
+                },
+                {
+                  "required": [
+                    "opacity_from"
+                  ]
+                },
+                {
+                  "required": [
+                    "opacity_to"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "description": "Bewegung einer Ebene: linear über die Gesamtdauer (dx, dy, opacity_from, opacity_to) oder als Keyframes. Beide Formen schließen sich aus.",
+      "properties": {
+        "dx": {
+          "default": 0.0,
+          "description": "Verschiebung in x-Richtung in Pixeln; schließt keyframes aus.",
+          "type": "number"
+        },
+        "dy": {
+          "default": 0.0,
+          "description": "Verschiebung in y-Richtung in Pixeln; schließt keyframes aus.",
+          "type": "number"
+        },
+        "easing": {
+          "$ref": "#/$defs/Easing",
+          "default": "linear",
+          "description": "Verlauf zwischen den Werten; fehlt er, gilt linear."
+        },
+        "keyframes": {
+          "description": "Stützpunkte in Sekunden, aufsteigend und ohne Dubletten (max. 64); schließen die linearen Felder aus. Zeitpunkte werden gegen die Szenen-Dauer geprüft.",
+          "items": {
+            "$ref": "#/$defs/Keyframe"
+          },
+          "maxItems": 64,
+          "type": "array"
+        },
+        "opacity_from": {
+          "default": 1.0,
+          "description": "Deckkraft am Anfang (0.0–1.0); schließt keyframes aus.",
+          "type": "number"
+        },
+        "opacity_to": {
+          "default": 1.0,
+          "description": "Deckkraft am Ende (0.0–1.0); schließt keyframes aus.",
+          "type": "number"
+        }
+      },
+      "type": "object"
+    },
+    "RectLayer": {
+      "additionalProperties": false,
+      "description": "Rechteck-Ebene.",
+      "properties": {
+        "color": {
+          "$ref": "#/$defs/Color",
+          "description": "Füllfarbe."
+        },
+        "height": {
+          "description": "Höhe in Pixeln.",
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        "motion": {
+          "$ref": "#/$defs/Motion",
+          "description": "Optionale Bewegung."
+        },
+        "radius": {
+          "default": 0.0,
+          "description": "Eckenradius in Pixeln; 0 zeichnet ein scharfes Rechteck.",
+          "minimum": 0,
+          "type": "number"
+        },
+        "type": {
+          "const": "rect",
+          "type": "string"
+        },
+        "width": {
+          "description": "Breite in Pixeln.",
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        "x": {
+          "description": "Linke Kante in Pixeln.",
+          "type": "number"
+        },
+        "y": {
+          "description": "Obere Kante in Pixeln.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "type",
+        "x",
+        "y",
+        "width",
+        "height",
+        "color"
+      ],
+      "type": "object"
+    },
+    "TextLayer": {
+      "additionalProperties": false,
+      "description": "Text-Ebene.",
+      "properties": {
+        "color": {
+          "$ref": "#/$defs/Color",
+          "description": "Textfarbe."
+        },
+        "motion": {
+          "$ref": "#/$defs/Motion",
+          "description": "Optionale Bewegung."
+        },
+        "size": {
+          "description": "Schriftgröße in Pixeln (1–512).",
+          "maximum": 512,
+          "minimum": 1,
+          "type": "number"
+        },
+        "text": {
+          "description": "Textinhalt.",
+          "type": "string"
+        },
+        "type": {
+          "const": "text",
+          "type": "string"
+        },
+        "x": {
+          "description": "Linke Kante in Pixeln.",
+          "type": "number"
+        },
+        "y": {
+          "description": "Grundlinie (Baseline) in Pixeln.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "type",
+        "x",
+        "y",
+        "text",
+        "size",
+        "color"
+      ],
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Szene (Version 1) für das Frame-Rendering.",
+  "properties": {
+    "background": {
+      "$ref": "#/$defs/Color",
+      "description": "Hintergrundfarbe."
+    },
+    "duration": {
+      "description": "Dauer in Sekunden (> 0, <= 600).",
+      "exclusiveMinimum": 0,
+      "maximum": 600,
+      "type": "number"
+    },
+    "fps": {
+      "description": "Bilder pro Sekunde (1–120).",
+      "format": "uint32",
+      "maximum": 120,
+      "minimum": 1,
+      "type": "integer"
+    },
+    "height": {
+      "description": "Höhe in Pixeln (16–8192).",
+      "format": "uint32",
+      "maximum": 8192,
+      "minimum": 16,
+      "type": "integer"
+    },
+    "layers": {
+      "description": "Ebenen von hinten nach vorn (max. 256).",
+      "items": {
+        "$ref": "#/$defs/Layer"
+      },
+      "maxItems": 256,
+      "type": "array"
+    },
+    "version": {
+      "const": 1,
+      "description": "Formatversion; muss 1 sein.",
+      "type": "integer"
+    },
+    "width": {
+      "description": "Breite in Pixeln (16–8192).",
+      "format": "uint32",
+      "maximum": 8192,
+      "minimum": 16,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "version",
+    "width",
+    "height",
+    "fps",
+    "duration",
+    "background",
+    "layers"
+  ],
+  "title": "Scene",
+  "type": "object"
+}

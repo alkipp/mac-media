@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Vorlage für den LaunchAgent des mac-compute-Gateways. install-mac.sh
+     ersetzt @HOME@ und @APP_SUPPORT@ und schreibt das Ergebnis nach
+     ~/Library/LaunchAgents/. -->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>de.kippar.mac-compute-gateway</string>
+  <key>KeepAlive</key>
+  <true/>
+  <key>ProcessType</key>
+  <string>Interactive</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>@APP_SUPPORT@/bin/mac-compute-gateway</string>
+    <string>--bind</string>
+    <string>127.0.0.1:8787</string>
+    <string>--servers-dir</string>
+    <string>@APP_SUPPORT@/servers.d</string>
+    <string>--token-file</string>
+    <string>@HOME@/.config/mac-compute/token</string>
+    <string>--log-dir</string>
+    <string>@HOME@/Library/Logs/mac-compute</string>
+  </array>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>ThrottleInterval</key>
+  <integer>10</integer>
+  <key>StandardOutPath</key>
+  <string>@HOME@/Library/Logs/mac-compute/gateway.log</string>
+  <key>StandardErrorPath</key>
+  <string>@HOME@/Library/Logs/mac-compute/gateway.err.log</string>
+</dict>
+</plist>

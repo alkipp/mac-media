@@ -1,0 +1,24 @@
+{
+  "name": "photo",
+  "version": "0.2.0",
+  "transport": "stdio",
+  "command": [
+    "@APP_SUPPORT@/venvs/photo/bin/python",
+    "@APP_SUPPORT@/backends/photo/server.py"
+  ],
+  "capabilities": [
+    "metal",
+    "mps",
+    "torch",
+    "image",
+    "audio",
+    "depth",
+    "matting",
+    "segmentation",
+    "upscale",
+    "transcribe"
+  ],
+  "timeout": 1800000,
+  "maxMemoryMB": 8192,
+  "enabled": true
+}
