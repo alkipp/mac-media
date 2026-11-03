@@ -1,0 +1,55 @@
+name: ci
+
+# Minimal CI for the parts that do not need Metal or Swift.
+# The full gate (Metal rendering, CoreML, VideoToolbox) only runs on a Mac;
+# paying 10x runner minutes for it here would be worse than no badge at all.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  portable:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        run: |
+          rustup toolchain install 1.99.1 --profile minimal --component rustfmt,clippy
+          rustup default 1.99.1
+
+      - name: Cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Format
+        run: cargo fmt --all --check
+
+      - name: Clippy (portable crates)
+        run: >
+          cargo clippy
+          -p mcp-core -p mac-compute-jobs -p scene
+          --all-targets -- -D warnings
+
+      - name: Tests (portable crates)
+        run: cargo test -p mcp-core -p mac-compute-jobs -p scene
+
+      - name: Shell syntax
+        run: |
+          set -u
+          rc=0
+          for file in scripts/*.sh; do
+            bash -n "$file" || rc=1
+          done
+          exit $rc
