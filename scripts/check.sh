@@ -52,7 +52,16 @@ step "swift build"
 swift build -c release --package-path swift
 
 step "swift test"
-swift test --package-path swift
+# `swift test` endet auch dann mit 0, wenn keine XCTest-Suite läuft: die
+# swift-testing-Zeile meldet dann „0 tests in 0 suites … passed“. Am 2026-11-07
+# war genau das im Gate-Log zu sehen, während 17 Tests liefen — und im
+# umgekehrten Fall wäre das Gate still grün. Deshalb wird gezählt.
+swift_log="$(mktemp)"
+trap 'rm -f "$swift_log"' EXIT
+swift test --package-path swift 2>&1 | tee "$swift_log"
+executed="$(grep -oE 'Executed [0-9]+ tests?' "$swift_log" | grep -oE '[0-9]+' | sort -n | tail -1 || true)"
+[ "${executed:-0}" -gt 0 ] || fail "swift test führte 0 Tests aus"
+printf '✔ %s Swift-Tests ausgeführt\n' "$executed"
 
 step "cargo deny check"
 cargo deny check
@@ -79,6 +88,10 @@ if [ "${#pyscripts[@]}" -gt 0 ]; then
   for script in "${pyscripts[@]}"; do
     python3 -c 'import ast, pathlib, sys; ast.parse(pathlib.Path(sys.argv[1]).read_text())' "$script"
   done
+  # Ein Skript, das nur syntaktisch prüfbar ist, kann trotzdem beim Start
+  # scheitern; --help beweist, dass es ohne Nebenwirkung läuft.
+  [ -f scripts/gateway-call.py ] \
+    && { python3 scripts/gateway-call.py --help >/dev/null || fail "gateway-call.py startet nicht"; }
   if command -v ruff >/dev/null 2>&1; then
     ruff format --check "${pyscripts[@]}"
     ruff check "${pyscripts[@]}"

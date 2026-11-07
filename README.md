@@ -76,6 +76,7 @@ mac-media/
     ├── check.sh            quality gate
     ├── codec-video.sh      acceptance run for audio, HEVC, ProRes
     ├── golden-video.sh     acceptance run: frames → MP4
+    ├── gateway-call.py     call any gateway tool from the shell
     ├── install-mac.sh      install/update on the Mac
     ├── rotate-token.sh     token rotation with a grace period
     └── sign-mac.sh         sign and notarise (Developer ID)
@@ -108,6 +109,25 @@ manifests, `--no-restart` leaves the launch agent alone. At the end the script
 checks `/health` with the token.
 
 A wrapper installer can call this script; pass `--no-gateway` to skip it.
+
+## Calling tools from the shell
+
+`scripts/gateway-call.py` is the client for the running gateway: one call, no
+session handshake by hand. It reads the token from `~/.config/mac-compute/token`
+and never prints it.
+
+```sh
+./scripts/gateway-call.py --list                       # all 41 tool names
+./scripts/gateway-call.py ml_info                      # any tool, empty arguments
+./scripts/gateway-call.py ml_analyze '{"path":"foto.heic","detail":"objects"}'
+./scripts/gateway-call.py ml_analyze --file auftrag.json
+./scripts/gateway-call.py --json ml_analyze '{"path":"foto.heic"}'   # raw result
+```
+
+It exists because the same client was written five times in one session — twice
+in bash with `curl`, three times in Python — every time for a single call. The
+Streamable-HTTP handshake (SSE response, `mcp-session-id` from the `initialize`
+header) and the JSON parsing now live in one place.
 
 ## Manifest
 
@@ -228,7 +248,8 @@ encoding).
 ## ML
 
 `ml-mcp` (Swift) reports the Metal device and CoreML compute devices, classifies
-PNG images and reads text from images and PDFs via Vision.
+PNG images, reads text from images and PDFs via Vision, and describes what an
+image shows with the on-device model of macOS 27.
 
 | Tool | Input | Output |
 |---|---|---|
@@ -237,6 +258,84 @@ PNG images and reads text from images and PDFs via Vision.
 | `ml_ane_probe` | – | layers of the probe model with the assigned compute device |
 | `ml_models` | optional `refresh` | models in the model directory with version, author and compute devices (60 s cache) |
 | `ml_ocr` | `path` under `/inbox` (image or PDF), `pages`, `languages`, `level`, `dpi`, `format`, `write` | text, `## page n` markers, optionally JSON with lines, boxes and confidence |
+| `ml_analyze` | `path` under `/inbox` (HEIC, JPEG, PNG, TIFF), `region`, `question`, `detail`, `language`, `vision`, `format`, `write` | image facts, scene labels, boxes with confidence, text, quality, and a narrative description |
+
+### `ml_analyze`
+
+Two engines, because neither is exact alone. **Vision** runs local detectors on
+ANE/GPU (scene labels, salient objects, rectangles, text, barcodes, animals,
+people, faces, aesthetics, lens smudge) — fast and measurable, but it only names
+broad categories. The **on-device language model** of macOS 27 reads the image as
+an attachment and describes objects, positions and details in words — it
+understands context, but it invents brands when a logo is too small. The tool
+keeps the parts apart: boxes and confidences are measurements, the narrative is
+an interpretation, and every text claim the model makes is compared against the
+Vision result.
+
+```text
+ml_analyze(path="/inbox/photo.heic")
+ml_analyze(path="/inbox/photo.heic", detail="objects")          # name each box
+ml_analyze(path="/inbox/photo.heic", region={x:0.28,y:0.28,width:0.28,height:0.24},
+           question="Which brand does the logo show?")
+```
+
+Measured on the Mac (iPhone 16 Pro photo, 3024 × 4032, portrait):
+
+| Run | Duration | Result |
+|---|---|---|
+| full frame, `detail=brief` | 2.6 s (cold start 7.4 s) | "a router by Ubiquiti" |
+| full frame, `detail=normal` | 3.9–4.9 s | summary plus 2–3 objects with position and detail |
+| `detail=objects` | 5.9 s + 1 s per labelled box | salient object becomes "Ubiquiti PoE switch" |
+| `region` on the logo, 28 % × 24 % | 3.7 s | "brand Ubiquiti, logo is a curve" |
+
+| Detector | 2048 px | Note |
+|---|---|---|
+| classify | 70 ms | Apple's scene model: `cord 0.78`, `machine 0.15` |
+| saliency | 21 ms | one box around the device, 73 % |
+| rectangles | 8 ms | sub-parts: logo plate, socket |
+| text | 77 ms | nothing on a photo without lettering |
+| animals / people / faces | 14–27 ms | each loads its own model on first use (4.7 s cold) |
+| aesthetics / smudge | 10 / 16 ms | 0.33 and 0.00 for the sample photo |
+
+**Orientation is applied first.** `CGImageSourceCreateThumbnailAtIndex` with
+`kCGImageSourceCreateThumbnailWithTransform` returns display pixels; a plain
+decode returns the stored buffer, which for an iPhone portrait photo is rotated
+90°. Without that step every box describes a sideways image — `sips` writes the
+stored 4032 × 3024 and hides the problem. Guarded by
+`OrientationTests.testGedrehtesFotoWirdAufgerichtet`.
+
+**Detail comes from the crop, not from a bigger prompt.** The model downsamples
+internally; a 12 MP photo arrives as roughly 1 500 × 2 000 pixels and a logo
+three centimetres wide carries no letters. `region` takes normalized fractions
+with a top-left origin (the values printed under "Erkannte Flächen"), so the
+agent can zoom in on the interesting part and ask again.
+
+Limits, measured 2026-11-07:
+
+- **Brands from a logo are unreliable.** The full frame named the right brand
+  ("Ubiquiti"), a 26 % crop of the same logo produced "brand D, type U". Use a
+  crop plus a question, and treat a brand as a claim, not a fact.
+- **A rigid output schema invites invention.** The same image produced "power
+  supply with a red button and a light-bulb logo" through `@Generable`, while a
+  free answer named the correct device. The fixed layout is therefore requested
+  in the prompt and parsed afterwards (`parseNarrative`), not enforced by a
+  schema.
+- **Text claims are checked.** The model read "u" and "2" on a picture without
+  any lettering. Every entry of its `Text:` line that the Vision pass does not
+  find appears as a note ("Modell nennt Text, den die Texterkennung nicht
+  liest …").
+- **Small crops are not objects.** `detail=objects` labels only boxes of at least
+  3 % area from saliency, animals, people and faces; a 4 % × 4 % crop of a power
+  strip was labelled "graffiti spray can by POG". Rectangles stay unnamed.
+- **Embossed lettering is lost on both paths.** At the device edge of a 12 MP
+  photo sits "12VDC" — about 60 px wide, embossed and upside down. The model
+  answered "3.5 mm jack" and "TESSERAC"; Vision found nothing, even after a 4×
+  upscale. Anything below roughly 10 % of the image width needs a macro shot,
+  not a better prompt.
+- **The narrative needs macOS 27** (`FoundationModels`, `Attachment<ImageContent>`).
+  Without it the tool still returns every Vision measurement and a note. The
+  Swift package therefore builds against macOS 26 as the floor.
+
 
 ### `ml_ocr`
 
@@ -258,6 +357,12 @@ ml_ocr(path="/inbox/scan.pdf", pages="1-17", write=True, format="text")
 
 Re-measure with `scripts/bench-ocr.sh <file-under-inbox> [pages]`; the script
 prints client time and the duration reported by the tool for each mode.
+
+Images are loaded through `CGImageSourceCreateThumbnailAtIndex` with
+`kCGImageSourceCreateThumbnailWithTransform`, so EXIF orientation is applied
+before recognition. Without it a portrait phone photo is recognised sideways and
+every box from `format=json` sits in the rotated raster. Guarded by
+`OcrOrientationTests.testGedrehtesFotoWirdGelesen`.
 
 Limits: `ml_ocr` returns text in reading order, but **no table structure, no
 formulas and no handwriting** — `gen_ocr` handles those. On numbers and IBANs
@@ -392,16 +497,12 @@ remain as a simple fallback. Objects know `emissive`, `emissiveIntensity` and
 4K30 is unlocked: `config/scenes/4k.json` renders 3840×2160 at 30 fps; measured
 150 frames in 7 s with 1.15 GiB peak RSS, hardware encoder active.
 
-`config/scenes/rechenzentrum.json` shows the 3D setup (119 objects, camera orbit,
-racks, LEDs, labels) from `scripts/make-data-center-scene.js`. The five-minute
-film `config/scenes/rechenzentrum-5min.json` (436 objects, 306 s, 23 camera
-anchors, six lights, chapters for three nodes, monitoring and backup) is
-generated by `scripts/make-data-center-5min.js`.
-
-The 2D network explainer that originally shipped with this project is not part
-of this repository: it described a real home network. The generator approach is
-the same — layered rectangles as panels, host boxes as rounded rects, a link as
-a thick line, packets as small circles moving along it.
+`config/scenes/rechenzentrum.json` shows the 3D setup (119 objects,
+camera orbit, racks, LEDs, labels) from `scripts/make-data-center-scene.js`. The
+five-minute film `config/scenes/rechenzentrum-5min.json` (436 objects, 306 s,
+23 camera anchors, six lights, chapters for three hosts, monitoring and backup)
+is generated by `scripts/make-data-center-5min.js`; the narration lives in the
+vault as a transcript.
 
 ### Frame transport
 
@@ -511,10 +612,11 @@ job.
 | `gen_unload` | – | release the OCR model |
 
 Models: FLUX.2 Klein 4B mflux Q4 (4.62 GB, Apache-2.0), Z-Image-Turbo 6B mflux
-Q6 (8.45 GB, Apache-2.0), PaddleOCR-VL (1.92 GB, Apache-2.0) and an optional
-local SDXL checkpoint run through diffusers on MPS (its own `sdxl` venv, not
-distributed here). Stored under `~/models/gen/`, downloaded with
-`backends/gen/download-models.sh` and `backends/gen/download-zimage.sh`.
+Q6 (8.45 GB, Apache-2.0), PaddleOCR-VL (1.92 GB, Apache-2.0) and the local SDXL
+checkpoint NSFW-gen-v2 (6.94 GB, `~/models/gen/sdxl-nsfw-v2/`, venv `sdxl` with
+diffusers; not in the download script — details in `backends/gen/README.md`).
+Stored under `~/models/gen/`, downloaded with `backends/gen/download-models.sh`
+and `backends/gen/download-zimage.sh`.
 
 ### Installing a model
 

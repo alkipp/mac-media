@@ -201,6 +201,85 @@ func runOCRVariante(_ arguments: [String: Value]?) async -> CallTool.Result {
     }
 }
 
+/// Liest eine Zahl, egal ob das JSON sie als Ganzzahl oder als Kommazahl liefert.
+func numberValue(_ value: Value?) -> Double? {
+    guard let value else { return nil }
+    if let double = value.doubleValue { return double }
+    if let int = value.intValue { return Double(int) }
+    return nil
+}
+
+/// Führt `analyze` aus: Argumente prüfen, deuten, ausgeben oder ablegen.
+func runAnalyzeVariante(_ arguments: [String: Value]?) async -> CallTool.Result {
+    guard let raw = arguments?["path"]?.stringValue, !raw.isEmpty else {
+        return textResult("path fehlt", isError: true)
+    }
+    do {
+        let url = try resolveInbox(raw)
+        var options = AnalyzeOptions()
+
+        if let regionValue = arguments?["region"], !regionValue.isNull {
+            guard let object = regionValue.objectValue else {
+                return textResult("region muss ein Objekt mit x, y, width, height sein", isError: true)
+            }
+            guard let x = numberValue(object["x"]),
+                  let y = numberValue(object["y"]),
+                  let width = numberValue(object["width"]),
+                  let height = numberValue(object["height"])
+            else {
+                return textResult("region braucht x, y, width und height als Zahl", isError: true)
+            }
+            let rect = CGRect(x: x, y: y, width: width, height: height)
+            guard rect.minX >= 0, rect.minY >= 0, rect.width > 0, rect.height > 0,
+                  rect.maxX <= 1.0001, rect.maxY <= 1.0001
+            else {
+                return textResult(
+                    "region liegt außerhalb des Bildes: x/y ab 0, Breite/Höhe bis 1",
+                    isError: true
+                )
+            }
+            options.region = rect
+        }
+
+        options.question = arguments?["question"]?.stringValue
+        if let detail = arguments?["detail"]?.stringValue {
+            guard let parsed = AnalyzeDetail(rawValue: detail) else {
+                return textResult("detail muss brief, normal oder objects sein", isError: true)
+            }
+            options.detail = parsed
+        }
+        if let language = arguments?["language"]?.stringValue {
+            guard language == "de" || language == "en" else {
+                return textResult("language muss de oder en sein", isError: true)
+            }
+            options.language = language
+        }
+        options.runVision = arguments?["vision"]?.boolValue ?? true
+        options.maxLabels = min(max(arguments?["max_labels"]?.intValue ?? 12, 1), 40)
+
+        let format = arguments?["format"]?.stringValue ?? "text"
+        guard format == "text" || format == "json" else {
+            return textResult("format muss text oder json sein", isError: true)
+        }
+        let write = arguments?["write"]?.boolValue ?? false
+
+        let result = try await analyzeImage(url: url, options: options)
+        let payload = format == "json"
+            ? try renderAnalysisJSON(result)
+            : renderAnalysis(result, question: options.question)
+
+        guard write else { return textResult(payload) }
+
+        let directory = try artifactsDirectory()
+        let name = format == "json" ? "analyze.json" : "analyze.txt"
+        let target = directory.appendingPathComponent(name)
+        try payload.write(to: target, atomically: true, encoding: .utf8)
+        return textResult("\(payload)\n\nDatei: /artifacts/\(directory.lastPathComponent)/\(name)")
+    } catch {
+        return textResult("Analyse fehlgeschlagen: \(error.localizedDescription)", isError: true)
+    }
+}
+
 let server = Server(
     name: "ml-mcp",
     version: "0.2.0",
@@ -328,6 +407,81 @@ await server.withMethodHandler(ListTools.self) { _ in
                 "required": .array([.string("path")]),
             ])
         ),
+        Tool(
+            name: "analyze",
+            description: "Deutet ein Bild: Gegenstände mit Position, Details, Text, "
+                + "Bildqualität. Kombiniert Vision-Detektoren mit dem lokalen "
+                + "Sprachmodell (macOS 27). Mit `region` wird ein Ausschnitt "
+                + "genauer gelesen.",
+            inputSchema: .object([
+                "type": .string("object"),
+                "properties": .object([
+                    "path": .object([
+                        "type": .string("string"),
+                        "description": .string("Pfad unter /inbox (HEIC, JPEG, PNG, TIFF)"),
+                    ]),
+                    "region": .object([
+                        "type": .string("object"),
+                        "description": .string(
+                            "Ausschnitt als Anteile des Bildes, Ursprung links oben: "
+                                + "{\"x\":0.2,\"y\":0.1,\"width\":0.5,\"height\":0.5}"
+                        ),
+                        "properties": .object([
+                            "x": .object(["type": .string("number")]),
+                            "y": .object(["type": .string("number")]),
+                            "width": .object(["type": .string("number")]),
+                            "height": .object(["type": .string("number")]),
+                        ]),
+                        "required": .array([
+                            .string("x"), .string("y"), .string("width"), .string("height"),
+                        ]),
+                    ]),
+                    "question": .object([
+                        "type": .string("string"),
+                        "description": .string("Zusatzfrage, die das Modell beantworten soll"),
+                    ]),
+                    "detail": .object([
+                        "type": .string("string"),
+                        "enum": .array([
+                            .string("brief"), .string("normal"), .string("objects"),
+                        ]),
+                        "description": .string(
+                            "brief (ein Satz), normal (Standard), objects (jede Fläche "
+                                + "zusätzlich einzeln benennen; je Fläche ein Modellaufruf)"
+                        ),
+                    ]),
+                    "language": .object([
+                        "type": .string("string"),
+                        "enum": .array([.string("de"), .string("en")]),
+                        "description": .string("Sprache der Deutung (Standard de)"),
+                    ]),
+                    "vision": .object([
+                        "type": .string("boolean"),
+                        "description": .string(
+                            "Detektoren mitlaufen lassen (Standard true); false spart Zeit"
+                        ),
+                    ]),
+                    "max_labels": .object([
+                        "type": .string("integer"),
+                        "minimum": .int(1),
+                        "maximum": .int(40),
+                        "description": .string("Anzahl der Szenenlabels (Standard 12)"),
+                    ]),
+                    "format": .object([
+                        "type": .string("string"),
+                        "enum": .array([.string("text"), .string("json")]),
+                        "description": .string("text (Standard) oder json"),
+                    ]),
+                    "write": .object([
+                        "type": .string("boolean"),
+                        "description": .string(
+                            "Ergebnis als analyze.txt/analyze.json unter /artifacts ablegen"
+                        ),
+                    ]),
+                ]),
+                "required": .array([.string("path")]),
+            ])
+        ),
     ]
     return .init(tools: tools)
 }
@@ -368,6 +522,9 @@ await server.withMethodHandler(CallTool.self) { params in
 
     case "ocr":
         return await runOCRVariante(params.arguments)
+
+    case "analyze":
+        return await runAnalyzeVariante(params.arguments)
 
     default:
         return textResult("Unbekanntes Tool: \(params.name)", isError: true)

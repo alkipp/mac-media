@@ -4,7 +4,9 @@ import PackageDescription
 let package = Package(
     name: "mac-compute-swift",
     platforms: [
-        .macOS(.v15)
+        // Vision's text and multimodal path plus the Foundation Models
+        // framework start at macOS 26; the narrative pass needs 27.
+        .macOS("26.0")
     ],
     products: [
         .executable(name: "ml-mcp", targets: ["MLMCP"]),

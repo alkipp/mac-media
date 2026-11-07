@@ -229,11 +229,33 @@ func isPDF(_ url: URL) -> Bool {
     return head == Data("%PDF-".utf8)
 }
 
-/// Lädt ein Bild aus einer Datei (PNG, JPEG, TIFF, HEIC, …).
+/// Lädt ein Bild aufgerichtet (EXIF-Drehung angewandt) und in Originalgröße.
+///
+/// Ein einfacher Dekode liefert den gespeicherten Puffer; bei einem Foto im
+/// Hochformat steht die Szene dort um 90° gedreht, und alle Boxen aus
+/// `format=json` lägen im gedrehten Raster. `maxPixelSize` auf die lange Kante
+/// verhindert dabei jedes Verkleinern.
 func loadImage(_ url: URL) throws -> CGImage {
     guard let source = CGImageSourceCreateWithURL(url as CFURL, nil) else {
         throw OCRError.unreadable("Datei ist kein lesbares Bild: \(url.lastPathComponent)")
     }
+
+    let properties = CGImageSourceCopyPropertiesAtIndex(source, 0, nil) as? [CFString: Any]
+    let width = properties?[kCGImagePropertyPixelWidth] as? Int ?? 0
+    let height = properties?[kCGImagePropertyPixelHeight] as? Int ?? 0
+    let longest = max(width, height)
+    if longest > 0 {
+        let options: [CFString: Any] = [
+            kCGImageSourceCreateThumbnailFromImageAlways: true,
+            kCGImageSourceCreateThumbnailWithTransform: true,
+            kCGImageSourceThumbnailMaxPixelSize: longest,
+            kCGImageSourceShouldCacheImmediately: true,
+        ]
+        if let upright = CGImageSourceCreateThumbnailAtIndex(source, 0, options as CFDictionary) {
+            return upright
+        }
+    }
+
     guard let image = CGImageSourceCreateImageAtIndex(source, 0, nil) else {
         throw OCRError.unreadable("Bild konnte nicht dekodiert werden")
     }
